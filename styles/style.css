@@ -207,6 +207,10 @@ main {
   text-align: left;
 }
 
+h6 {
+  color: black;
+}
+
 span {
   color: yellow;
 }
@@ -521,6 +525,14 @@ footer {
 
 .margin {
   margin-bottom: 30px;
+  width: 62px;
+  height: 52px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer-bottom-slack h6 {
+  color: #1264A3;
 }
 
 .footer-mid-button {
