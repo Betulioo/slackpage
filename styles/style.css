@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,28 +60,35 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto Slab", serif;
+  font: bold;
 }
 
 header {
   width: 100%;
   height: 100vh;
-  background-color: purple;
+  background-color: rgb(83, 21, 83);
   display: flex;
   flex-direction: column;
+  margin-bottom: 67px;
 }
 
 nav {
   width: 100%;
   height: 10%;
-  background-color: purple;
+  background-color: rgb(83, 21, 83);
   display: flex;
   justify-content: space-between;
+  position: fixed;
 }
 
 .navbar--logo {
   width: 30%;
   height: 100%;
-  background-color: purple;
+  background-color: rgb(83, 21, 83);
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
 }
 
 .navbar--logo--img {
@@ -88,11 +96,15 @@ nav {
   height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-right: 20px;
 }
 
 .navbar--menu {
   width: 30%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .navbar--menu--img {
   width: 95px;
@@ -101,13 +113,27 @@ nav {
      object-fit: contain;
 }
 
-.navbar--menu--img {
-  width: 200px;
-  height: 50px;
-  padding-right: 20px;
+.positionheader {
+  padding-top: 80px;
 }
 
 .section-header1 {
+  width: 100%;
+  height: 59vh;
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.section-header2 {
   width: 100%;
   height: 50vh;
   padding: 30px;
@@ -118,31 +144,22 @@ nav {
   border-bottom-left-radius: 200px;
 }
 
-.boton1 {
-  width: 77vw;
-  height: 6vh;
-  background-color: purple;
-  display: flex;
-  margin-top: 20px;
-  border: none;
+.div-header {
+  width: 100%;
 }
 
-.boton1-contain {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.section-header2 {
-  width: 100%;
-  height: 50vh;
-  background-color: white;
+.google-img {
+  width: 63px;
+  height: 45px;
+  background-color: #FFFFFF;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 main {
   width: 100%;
-  height: 340vh;
-  background-color: rgb(236, 229, 219);
+  height: 294vh;
+  background-color: rgb(244, 237, 228);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -150,12 +167,17 @@ main {
 
 .section-main-logobox {
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 40px;
   gap: 10px;
+  align-items: center;
+}
+.section-main-logobox p {
+  color: black;
+  margin-bottom: 5px;
 }
 
 .section-main-logobox-img {
@@ -175,11 +197,6 @@ main {
 .section-main-card-img {
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-h1 {
-  font-size: 40px;
-  color: white;
 }
 
 span {
@@ -252,39 +269,14 @@ h4 {
   flex-direction: column;
   padding-top: 40px;
 }
-
-.header2 h2 {
+.section-article span {
+  color: rgb(83, 21, 83);
+  text-align: center;
+  font-size: 40px;
+}
+.section-article h2 {
+  text-align: center;
   font-size: 30px;
-  text-align: center;
-}
-.header2 p {
-  font-size: 20px;
-  margin-top: 20px;
-}
-.header2 span {
-  color: purple;
-  font-size: 60px;
-  text-align: center;
-}
-
-.boton2 {
-  width: 85vw;
-  height: 8vh;
-  background-color: white;
-  display: flex;
-  margin-top: 20px;
-  border: none;
-}
-
-.boton2-contain {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 4vh;
-}
-
-.borde {
-  border: 1px solid grey;
 }
 
 .section-article-info {
@@ -305,15 +297,70 @@ h4 {
 }
 
 .colorMorado {
-  color: purple;
+  color: rgb(83, 21, 83);
 }
 
 .bgmorado {
-  background-color: purple;
+  background-color: rgb(83, 21, 83);
 }
 
 .borde2 {
   border: 2px solid white;
+}
+
+.boton2 {
+  width: 85vw;
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  margin-top: 20px;
+  border: none;
+}
+
+.elBoton {
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.botonVentas {
+  width: 90%;
+  height: 14%;
+  display: flex;
+  margin-top: 20px;
+  border: 2px solid rgb(83, 21, 83);
+  background-color: #FFFFFF;
+}
+.botonVentas p {
+  color: rgb(83, 21, 83);
+}
+
+.botonRegistrar {
+  width: 90%;
+  height: 14%;
+  margin-top: 20px;
+  background-color: #4285F4;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.botonRegistrar p {
+  color: white;
+  font: bold;
+}
+
+.boton2-contain {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 4vh;
+}
+
+.borde {
+  border: 1px solid grey;
 }
 
 .boton4 {
@@ -330,11 +377,36 @@ h4 {
   width: 80vw;
   height: 6vh;
   border-radius: 5px;
-  background-color: purple;
+  background-color: rgb(83, 21, 83);
   border: 2px solid white;
   font-size: 20px;
   display: flex;
   align-items: center;
+}
+
+.section-footer1 {
+  width: 100%;
+  height: 50vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+
+.footer2 h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.footer2 p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.footer2 span {
+  color: rgb(83, 21, 83);
+  font-size: 60px;
+  text-align: center;
 }
 
 h5::after {
@@ -345,7 +417,7 @@ h5::after {
 
 footer {
   width: 100%;
-  height: 168vh;
+  height: 140vh;
   display: flex;
   flex-direction: column;
 }
