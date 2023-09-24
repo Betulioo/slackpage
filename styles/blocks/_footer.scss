@@ -4,6 +4,7 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
@@ -91,10 +92,6 @@ footer{
     }
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
 .imagenSize{
     width: 40px;
     height: 19px;
